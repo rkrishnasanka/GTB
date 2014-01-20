@@ -1,0 +1,216 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:GTB
+LIBS:valves
+LIBS:GTB-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "20 jan 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 7555 TU1
+U 1 1 52DD5FA3
+P 7050 4200
+F 0 "TU1" H 7450 3850 60  0000 C CNN
+F 1 "7555" H 7100 4400 60  0000 C CNN
+F 2 "" H 6850 4350 60  0000 C CNN
+F 3 "" H 6850 4350 60  0000 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 52DD5FFA
+P 6100 4900
+F 0 "C1" H 6100 5000 40  0000 L CNN
+F 1 "1u" H 6106 4815 40  0000 L CNN
+F 2 "~" H 6138 4750 30  0000 C CNN
+F 3 "~" H 6100 4900 60  0000 C CNN
+	1    6100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 52DD6009
+P 6100 4150
+F 0 "R1" V 6180 4150 40  0000 C CNN
+F 1 "470K" V 6107 4151 40  0000 C CNN
+F 2 "~" V 6030 4150 30  0000 C CNN
+F 3 "~" H 6100 4150 30  0000 C CNN
+	1    6100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VR VR1
+U 1 1 52DD602C
+P 6100 3400
+F 0 "VR1" V 6160 3354 40  0000 C TNN
+F 1 "VR" V 6100 3400 40  0000 C CNN
+F 2 "~" H 6100 3400 60  0000 C CNN
+F 3 "~" H 6100 3400 60  0000 C CNN
+	1    6100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 52DD6039
+P 8000 4350
+F 0 "R2" V 8080 4350 40  0000 C CNN
+F 1 "1K" V 8007 4351 40  0000 C CNN
+F 2 "~" V 7930 4350 30  0000 C CNN
+F 3 "~" H 8000 4350 30  0000 C CNN
+	1    8000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 52DD604B
+P 8000 5000
+F 0 "D1" H 8000 5100 50  0000 C CNN
+F 1 "LED" H 8000 4900 50  0000 C CNN
+F 2 "~" H 8000 5000 60  0000 C CNN
+F 3 "~" H 8000 5000 60  0000 C CNN
+	1    8000 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3200 7000 2850
+Wire Wire Line
+	6100 2850 7200 2850
+Wire Wire Line
+	6100 2550 6100 3150
+Wire Wire Line
+	6100 3650 6100 3900
+Wire Wire Line
+	6400 3850 6100 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	6100 4400 6100 4700
+Connection ~ 6100 4550
+Wire Wire Line
+	7200 2850 7200 3200
+Connection ~ 7000 2850
+Wire Wire Line
+	6400 4050 6300 4050
+Wire Wire Line
+	6300 4050 6300 4550
+Wire Wire Line
+	6300 4550 6100 4550
+Wire Wire Line
+	6400 4250 6300 4250
+Connection ~ 6300 4250
+Wire Wire Line
+	8000 4100 8000 4000
+Wire Wire Line
+	8000 4000 7800 4000
+Wire Wire Line
+	8000 4600 8000 4800
+Wire Wire Line
+	8000 5200 8000 5350
+Wire Wire Line
+	8000 5350 6100 5350
+Wire Wire Line
+	6100 5100 6100 5600
+Wire Wire Line
+	7000 4750 7000 5350
+Connection ~ 7000 5350
+$Comp
+L GND #PWR01
+U 1 1 52DD612E
+P 6100 5600
+F 0 "#PWR01" H 6100 5600 30  0001 C CNN
+F 1 "GND" H 6100 5530 30  0001 C CNN
+F 2 "" H 6100 5600 60  0000 C CNN
+F 3 "" H 6100 5600 60  0000 C CNN
+	1    6100 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 5350
+$Comp
+L VCC #PWR02
+U 1 1 52DD6155
+P 6100 2550
+F 0 "#PWR02" H 6100 2650 30  0001 C CNN
+F 1 "VCC" H 6100 2650 30  0000 C CNN
+F 2 "" H 6100 2550 60  0000 C CNN
+F 3 "" H 6100 2550 60  0000 C CNN
+	1    6100 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 2850
+$Comp
+L BATTERY BT1
+U 1 1 52DD61D3
+P 4200 4150
+F 0 "BT1" H 4200 4350 50  0000 C CNN
+F 1 "CR2132" H 4200 3960 50  0000 C CNN
+F 2 "~" H 4200 4150 60  0000 C CNN
+F 3 "~" H 4200 4150 60  0000 C CNN
+	1    4200 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 52DD61E0
+P 4200 3400
+F 0 "#PWR03" H 4200 3500 30  0001 C CNN
+F 1 "VCC" H 4200 3500 30  0000 C CNN
+F 2 "" H 4200 3400 60  0000 C CNN
+F 3 "" H 4200 3400 60  0000 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 52DD61E6
+P 4200 5000
+F 0 "#PWR04" H 4200 5000 30  0001 C CNN
+F 1 "GND" H 4200 4930 30  0001 C CNN
+F 2 "" H 4200 5000 60  0000 C CNN
+F 3 "" H 4200 5000 60  0000 C CNN
+	1    4200 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4450 4200 5000
+Wire Wire Line
+	4200 3850 4200 3400
+$EndSCHEMATC
