@@ -1,0 +1,1 @@
+First KiCAD project following the tutorial from Contextual Electronics[http://www.contextualelectronics.com]
